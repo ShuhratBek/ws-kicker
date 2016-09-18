@@ -1,7 +1,7 @@
 {
   "name": "ws-kicker",
   "version": "0.1.0",
-  "description": "My Angular2-TypeScript App",
+  "description": "WS Kicker",
   "keywords": [
     "angular2",
     "typescript",
@@ -9,9 +9,9 @@
   ],
   "scripts": {
     "lint": "tslint \"src/**/*.ts\"",
-    "start": "gulp && node index.js",
+    "start": "npm i typescript && npm i express && node web.js",
     "build": "gulp build",
-    "postinstall": "typings install",
+    "postinstall": "typings install && gulp",
     "test": "karma start"
   },
   "dependencies": {
