@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 m-t-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="ws-urll">Url</span>
+                        <input type="text" class="form-control" [(ngModel)]="url" id="ws-url" aria-describedby="ws-urll" required>
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button" (click)="connect()">Connect</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-t-2">
+        <div class="col-md-6">
+            <request></request>
+        </div>
+        <div class="col-md-6">
+            <response [messages]="messages"></response>
+        </div>
+    </div>
+</div>

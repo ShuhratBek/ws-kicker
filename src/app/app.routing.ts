@@ -1,9 +1,14 @@
-import { ModuleWithProviders }  from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {ModuleWithProviders}  from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 
-export const routes: Routes = [
-  { path: '', loadChildren: 'app/qr/qr.module#QRModule'},
-  { path: 'qr', loadChildren: 'app/qr/qr.module#QRModule' }
+import {HomeComponent} from './home/home.component';
+import {AboutComponent} from './about/about.component';
+
+const appRoutes: Routes = [
+    { path: '', component: HomeComponent },
+    { path: 'about', component: AboutComponent }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
+export const appRoutingProviders: any[] = [];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

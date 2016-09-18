@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header">
+        <div class="pull-xs-right">
+            <label class="custom-control custom-checkbox m-r-1">
+                <input type="checkbox" [(ngModel)]="clear" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Clear after send</span>
+            </label>
+            <button type="button" class="btn btn-outline-primary btn-sm" (click)="send()">Send</button>
+        </div>
+        <h5 class="card-title">Request</h5>
+    </div>
+    <textarea rows="14" class="form-control" [(ngModel)]="request"></textarea>
+</div>
