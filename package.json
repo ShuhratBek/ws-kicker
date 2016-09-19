@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "lint": "tslint \"src/**/*.ts\"",
-    "start": "gulp && node web.js",
+    "start": "gulp build && node web.js",
     "build": "gulp build",
     "postinstall": "typings install",
     "test": "karma start"
