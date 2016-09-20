@@ -37,8 +37,7 @@ export class WebSocketService {
                 }
             }
         };
-
+        
         return Rx.Subject.create(observer, observable);
     }
-
-} // end class WebSocketService
+}

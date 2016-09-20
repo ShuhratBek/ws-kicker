@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Rx';
-import {WebSocketService } from './websocket.service';
+import { WebSocketService } from './websocket.service';
 
 @Injectable()
 export class ApiService {
     public messages: Subject<any>;
-    url: string = 'ws://echo.websocket.org';
+    public url: string = 'wss://echo.websocket.org';
+
     constructor(public wsService: WebSocketService) {
         this.messages = <Subject<any>>wsService
             .connect(this.url)
@@ -24,4 +25,4 @@ export class ApiService {
                 return data;
             });
     }
-} // end class ApiService
+}

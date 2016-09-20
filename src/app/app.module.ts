@@ -8,7 +8,6 @@ import {routing, appRoutingProviders} from './app.routing';
 import {HomeComponent} from './home/home.component';
 import {ResponseComponent} from './home/response/response.component';
 import {RequestComponent} from './home/request/request.component';
-import {AboutComponent} from './about/about.component';
 import {WebSocketService } from './home/websocket.service';
 import {ApiService } from './home/api.service';
 
@@ -16,7 +15,6 @@ import {ApiService } from './home/api.service';
     declarations: [
         AppComponent,
         HomeComponent,
-        AboutComponent,
         RequestComponent,
         ResponseComponent
     ],

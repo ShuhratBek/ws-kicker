@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {ApiService } from '../api.service';
+import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
     selector: 'request',
@@ -7,8 +7,8 @@ import {ApiService } from '../api.service';
 })
 
 export class RequestComponent {
-    request: string;
-    clear: boolean = true;
+    private request: string;
+    private clear: boolean = true;
 
     constructor(private apiService: ApiService) {
 
